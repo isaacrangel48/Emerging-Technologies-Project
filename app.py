@@ -1,52 +1,30 @@
 import streamlit as st
-import ollama
+st.set_page_config(
+    page_title="Randomness Lab",
+    page_icon="🎲"
+)
 
-st.title("Randomness Lab")
-st.header("Experiment 1: Temperature and Text Generation")
+st.title("🎲 Randomness Lab")
 
 st.write(
-    "This experiment sends the same prompt to the same AI model "
-    "using different temperature settings."
+    """
+    Welcome to Randomness Lab!
+
+    This website demonstrates how randomness affects artificial intelligence
+    and deep-learning systems.
+
+    Use the page menu on the left to select an experiment.
+    """
 )
 
-prompt = st.text_area(
-    "Enter a prompt:",
-    "Write a short story about a robot discovering music."
+st.subheader("Experiments")
+
+st.write(
+    """
+    **Experiment 1:** Temperature and text generation
+
+    **Experiment 2:** Random seeds and reproducibility
+
+    **Experiment 3:** Random weight initialization in neural networks
+    """
 )
-
-temperatures = [0.0, 0.5, 1.0, 1.5]
-
-if st.button("Run Experiment"):
-
-    for temp in temperatures:
-
-        st.subheader(f"Temperature: {temp}")
-
-        with st.spinner(f"Generating at temperature {temp}..."):
-
-            response = ollama.chat(
-                model="qwen3.5:latest",
-                messages=[
-                    {
-                        "role": "user",
-                        "content": prompt
-                    }
-                ],
-                options={
-                    "temperature": temp
-                }
-            )
-
-        text = response["message"]["content"]
-
-        st.write(text)
-
-        # Simple measurements
-        words = text.split()
-        total_words = len(words)
-        unique_words = len(set(word.lower() for word in words))
-
-        st.write(f"Total words: {total_words}")
-        st.write(f"Unique words: {unique_words}")
-
-        st.divider()
