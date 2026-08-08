@@ -20,7 +20,7 @@ st.write(
 
 prompt = st.text_area(
     "Enter a prompt:",
-    "Write a short paragraph about a robot learning how to cook."
+    "Write a 5-10 sentence summary of the book Moneyball starring Brad Pitt."
 )
 
 temperature = st.slider(

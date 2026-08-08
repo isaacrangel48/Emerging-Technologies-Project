@@ -8,7 +8,7 @@ st.title("🎲 How Randomness Affects AI")
 
 st.write(
     """
-    Welcome to How Randomness Affects AI!
+    Welcome to our Project!
 
     This website demonstrates how randomness affects artificial intelligence
     and deep-learning systems.

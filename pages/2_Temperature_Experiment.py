@@ -15,7 +15,7 @@ st.write(
 
 prompt = st.text_area(
     "Enter a prompt:",
-    "Write a short story about a robot discovering music."
+    "Write a 5-10 sentence summary of the book Moneyball starring Brad Pitt."
 )
 
 temperatures = [0.0, 0.5, 1.0, 1.5]
