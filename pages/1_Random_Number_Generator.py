@@ -9,7 +9,7 @@ st.set_page_config(
     page_icon="🎲"
 )
 
-st.title("🎲 Experiment 4: Random Number Generator")
+st.title("🎲 Experiment 1: Random Number Generator")
 
 st.write(
     """

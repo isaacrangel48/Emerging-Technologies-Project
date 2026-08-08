@@ -6,7 +6,7 @@ st.set_page_config(
     page_icon="🌡️"
 )
 
-st.title("🌡️ Experiment 1: Temperature and Text Generation")
+st.title("🌡️ Experiment 2: Temperature and Text Generation")
 
 st.write(
     "This experiment sends the same prompt to the same AI model "

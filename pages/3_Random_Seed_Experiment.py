@@ -6,7 +6,7 @@ st.set_page_config(
     page_icon="🌱"
 )
 
-st.title("🌱 Experiment 2: Random Seeds")
+st.title("🌱 Experiment 3: Random Seeds")
 
 st.write(
     """

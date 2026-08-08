@@ -13,7 +13,7 @@ st.set_page_config(
     page_icon="🧠"
 )
 
-st.title("🧠 Experiment 3: Random Weight Initialization")
+st.title("🧠 Experiment 4: Random Weight Initialization")
 
 st.write(
     """
