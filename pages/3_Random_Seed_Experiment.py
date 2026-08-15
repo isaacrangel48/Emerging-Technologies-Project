@@ -48,7 +48,7 @@ number_of_runs = st.slider(
 
 
 def generate_response(user_prompt, selected_temperature, selected_seed):
-    """Send a prompt and randomness settings to Ollama."""
+    """Generate a visible response from Qwen using controlled randomness."""
 
     response = ollama.chat(
         model="qwen3.5:latest",
@@ -58,13 +58,20 @@ def generate_response(user_prompt, selected_temperature, selected_seed):
                 "content": user_prompt
             }
         ],
+        think=False,
         options={
             "temperature": selected_temperature,
-            "seed": selected_seed
+            "seed": int(selected_seed),
+            "num_predict": 300
         }
     )
 
-    return response["message"]["content"]
+    text = response["message"]["content"].strip()
+
+    if not text:
+        return "[No visible response was generated.]"
+
+    return text
 
 
 def calculate_word_similarity(first_text, second_text):
