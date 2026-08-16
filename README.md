@@ -13,11 +13,6 @@ The language-model experiments use Qwen 3.5 through Ollama.
 
 
 How to Run the Application
-1. Clone the Repository
-
-Open PowerShell and run:
-
-git clone https://github.com/isaacrangel48/Emerging-Technologies-Project.git
 
 1. Clone the Repository
 
