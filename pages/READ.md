@@ -30,7 +30,7 @@ Move into the project folder:
 cd Emerging-Technologies-Project  /n
 
 2. Create a Virtual Environment
-python -m venv venv
+python -m venv venv  /n
 
 
 3. Activate the Virtual Environment on Windows
@@ -38,9 +38,9 @@ python -m venv venv
 
 After activation, the PowerShell prompt should begin with:
 
-(venv)
+(venv)  /n
 4. Install the Required Python Packages
-pip install streamlit ollama scikit-learn pandas
+pip install streamlit ollama scikit-learn pandas  /n
 5. Install Ollama
 
 Ollama must be installed locally before running the language-model experiments.
@@ -53,7 +53,7 @@ You can confirm that the model is installed with:
 
 ollama list
 
-The list should include Qwen 3.5.
+The list should include Qwen 3.5.  /n
 
 6. Run the Application
 
