@@ -27,7 +27,8 @@ git clone https://github.com/isaacrangel48/Emerging-Technologies-Project.git
 
 Move into the project folder:
 
-cd Emerging-Technologies-Project
+cd Emerging-Technologies-Project  /n
+
 2. Create a Virtual Environment
 python -m venv venv
 
